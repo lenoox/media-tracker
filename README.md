@@ -1,5 +1,5 @@
 # Media Tracker
-Application for tracking favorite movies and unit tests.
+Application for tracking movies with unit tests.
 
 Features:
 * Login to the default demo account,
