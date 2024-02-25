@@ -6,4 +6,8 @@ export const langEn = {
   productionCountries: `Countries`,
   productionYear: `Year`,
   showBtnText: `Show`,
+  emailAddressText: `Email adress`,
+  passwordAddressText: `Password`,
+  loginPageHeaderText: `Sign in`,
+  signInButtonText: `Sign in`,
 };

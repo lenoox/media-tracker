@@ -1,6 +1,7 @@
 import { filteredParamsIfNotNull } from "../utils/utils";
 import axios, { AxiosResponse } from "axios";
 import { localStorageService } from "./storage.service";
+import {goToPage} from "./navigate.service";
 
 const axiosApi = axios.create();
 const env = process.env;
@@ -33,6 +34,8 @@ const axiosInterceptor = () => {
       const token = localStorageService.getLocalStorage("token");
       if (token === api.getApiToken()) {
         config.headers.Authorization = "Bearer " + api.getApiToken();
+      }else{
+        goToPage("/login")
       }
       return config;
     },

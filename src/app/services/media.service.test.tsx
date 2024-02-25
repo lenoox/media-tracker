@@ -60,7 +60,7 @@ describe("media", () => {
       { params }
     );
   });
-  it("should return movie by id", async () => {
+  it("should return a movie by id", async () => {
     const mockAxiosGet = jest.spyOn(apiService.api.axiosApi, "get");
 
     mockAxiosGet.mockResolvedValue({

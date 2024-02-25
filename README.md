@@ -1,7 +1,19 @@
 # Media Tracker
+Application for tracking favorite movies and unit tests.
 
-Application for tracking favorite movies.
+Features:
+* Login to the default demo account,
+* Displaying the database of movies with descriptions,
+* Search movie by name,
+* Search movie by category,
+* Light and dark theme,
+* Polish or English language version,
 
-### Technology
+### Account with credentials:
+login: demo, password: demo
 
-React 18, Tailwind CSS, TypeScript, React Testing Library/Jest
+## Documentation
+* [Stack](./docs/Stack.md)
+* [Installation](./docs/Installation.md)
+* [Unit test](./docs/UnitTest.md)
+* [Screenshots](./docs/Screenshots.md)

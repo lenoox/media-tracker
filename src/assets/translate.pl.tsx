@@ -6,4 +6,8 @@ export const langPl = {
   productionCountries: `Kraje`,
   productionYear: `Rok`,
   showBtnText: `Pokaż`,
+  emailAddressText: `Adres email`,
+  passwordAddressText: `Hasło`,
+  loginPageHeaderText: `Logowanie`,
+  signInButtonText: `Zaloguj się`,
 };
