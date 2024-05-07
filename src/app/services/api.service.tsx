@@ -1,6 +1,6 @@
-import { filteredParamsIfNotNull } from "../utils/utils";
-import axios, { AxiosResponse } from "axios";
-import { localStorageService } from "./storage.service";
+import {filteredParamsIfNotNull} from "../utils/utils";
+import axios, {AxiosResponse} from "axios";
+import {localStorageService} from "./storage.service";
 import {goToPage} from "./navigate.service";
 
 const axiosApi = axios.create();

@@ -1,11 +1,8 @@
 import "@testing-library/jest-dom/extend-expect";
-import { fireEvent, screen } from "@testing-library/react";
+import {fireEvent, screen} from "@testing-library/react";
 import * as router from "react-router";
 import Navbar from "./navbar";
-import {
-  initUseTranslationForTest,
-  renderComponent,
-} from "../../utils/utils-for-test";
+import {initUseTranslationForTest, renderComponent,} from "../../utils/utils-for-test";
 
 jest.mock("react-i18next", () => ({
   useTranslation: jest.fn(),

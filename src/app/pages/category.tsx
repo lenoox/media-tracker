@@ -1,18 +1,8 @@
-import React, { useEffect, useState } from "react";
-import {
-  getAllCategories,
-  getMovieByCategory,
-} from "../services/media.service";
-import { MovieCard } from "../components/movie-card/movie-card";
-import {
-  Categories,
-  CategoriesResponse,
-  CategoryMediaList,
-  Media,
-  MediaList,
-  MediaRequest,
-} from "../models/media";
-import { LoaderFunctionArgs, useLoaderData } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {getAllCategories, getMovieByCategory,} from "../services/media.service";
+import {MovieCard} from "../components/movie-card/movie-card";
+import {Categories, CategoriesResponse, CategoryMediaList, Media, MediaList, MediaRequest,} from "../models/media";
+import {LoaderFunctionArgs, useLoaderData} from "react-router-dom";
 
 export async function mediaByCategoriesLoader({
   params: { categoryId },

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { getToken } from "../services/user.service";
+import React, {FormEvent, useState} from "react";
+import {getToken} from "../services/user.service";
 import {useTranslation} from "react-i18next";
 
 export const Login = () => {
@@ -7,7 +7,7 @@ export const Login = () => {
   const [username, setUserName] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!username || !password) {
       return;

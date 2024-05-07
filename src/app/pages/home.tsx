@@ -1,29 +1,30 @@
-import React, { useEffect, useState } from "react";
-import { popularMovie, searchMovies } from "../services/media.service";
-import { MovieCard } from "../components/movie-card/movie-card";
-import { Media, MediaList } from "../models/media";
-import { useSearchMedia } from "../context/search-media-provider";
+import React, {useEffect, useState} from "react";
+import {popularMovie, searchMovies} from "../services/media.service";
+import {MovieCard} from "../components/movie-card/movie-card";
+import {Media, MediaList} from "../models/media";
+import {useSearchMedia} from "../context/search-media-provider";
 
 export const Home = () => {
   const [title, setTitle] = useState<string | null>(null);
   const [movies, setMovies] = useState<Media[]>([]);
-  const [searchMedia, _] = useSearchMedia();
+  const [searchMedia] = useSearchMedia();
 
-  const searchMovie = async (video: string | null) => {
-    const { results }: MediaList<Media> = await searchMovies(video);
-    setTitle(`Results for ${searchMedia}`);
-    setMovies(results);
-  };
-  const popularMedia = async () => {
-    const { results }: MediaList<Media> = await popularMovie();
-    setMovies(results);
-    setTitle("Popular Productions");
-  };
+
   useEffect(() => {
-    popularMedia().catch((e) => console.log(e));
+    const popularMedia = async () => {
+      const { results }: MediaList<Media> = await popularMovie();
+      setMovies(results);
+      setTitle("Popular Productions");
+    };
+    popularMedia().catch((e)=>console.log(e))
   }, []);
   useEffect(() => {
-    searchMovie(searchMedia).catch((e) => console.log(e));
+    const searchMovie = async () => {
+      const { results }: MediaList<Media> = await searchMovies(searchMedia);
+      setTitle(`Results for ${searchMedia}`);
+      setMovies(results);
+    };
+    searchMovie().catch((e)=>console.log(e))
   }, [searchMedia]);
   return (
     <div data-testid="home-page">

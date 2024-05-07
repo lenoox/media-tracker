@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Directory } from "../../models/directory";
-import { useTranslation } from "react-i18next";
+import {useState} from "react";
+import {Directory} from "../../models/directory";
+import {useTranslation} from "react-i18next";
 
 const LanguageSelector = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const availableLanguages: Directory[] = [
     { label: "EN", value: "en" },
     { label: "PL", value: "pl" },

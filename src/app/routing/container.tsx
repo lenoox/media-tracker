@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/navbar/navbar";
-import { Outlet } from "react-router-dom";
-import { currentYear } from "../utils/utils";
-import { useTranslation } from "react-i18next";
+import {Outlet} from "react-router-dom";
+import {currentYear} from "../utils/utils";
+import {useTranslation} from "react-i18next";
 
 export const AppContainer = () => {
   const { t } = useTranslation();

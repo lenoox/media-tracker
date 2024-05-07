@@ -1,13 +1,10 @@
 import MockAdapter from "axios-mock-adapter";
 import Menu from "./menu";
-import { screen } from "@testing-library/react";
-import { categoriesData } from "../../services/media-data";
+import {screen} from "@testing-library/react";
+import {categoriesData} from "../../services/media-data";
 import axios from "axios";
-import {
-  initUseTranslationForTest,
-  renderComponent,
-} from "../../utils/utils-for-test";
-import { api } from "../../services/api.service";
+import {initUseTranslationForTest, renderComponent,} from "../../utils/utils-for-test";
+import {api} from "../../services/api.service";
 
 export const axiosApi = axios.create();
 const mock = new MockAdapter(axiosApi);

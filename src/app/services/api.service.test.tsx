@@ -1,7 +1,7 @@
 import * as apiService from "./api.service";
 import * as localStorageService from "./storage.service";
-import { getMovie } from "./media.service";
-import { movieData } from "./media-data";
+import {getMovie} from "./media.service";
+import {movieData} from "./media-data";
 import {apiKey, mockUrl, tokenMock} from "../utils/utils-for-test";
 
 describe("Api Service", () => {
