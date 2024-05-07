@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next";
-import { ReactElement } from "react";
-import { render } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
+import {useTranslation} from "react-i18next";
+import {ReactElement} from "react";
+import {render} from "@testing-library/react";
+import {BrowserRouter as Router} from "react-router-dom";
 
 export const mockUrl = "http://localhost:8080";
 export const tokenMock = "123456";

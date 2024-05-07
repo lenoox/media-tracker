@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import RouteRoot from "./app/routing/route";
-import { SearchMediaProvider } from "./app/context/search-media-provider";
-import { translateInit } from "./app/services/translate.service";
+import {SearchMediaProvider} from "./app/context/search-media-provider";
+import {translateInit} from "./app/services/translate.service";
 
 translateInit();
 function App() {

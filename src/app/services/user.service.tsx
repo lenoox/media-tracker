@@ -1,7 +1,7 @@
-import { Response } from "../models/core";
-import { TokenResponse } from "../models/user";
-import { goToPage } from "./navigate.service";
-import { api } from "./api.service";
+import {Response} from "../models/core";
+import {TokenResponse} from "../models/user";
+import {goToPage} from "./navigate.service";
+import {api} from "./api.service";
 
 export const getToken = async (
   username: string,
@@ -27,7 +27,7 @@ export const getToken = async (
   );
   if (tokenData?.data?.token) {
     localStorage.setItem("token", tokenData.data.token);
-    return goToPage("/");
+    goToPage("/");
   }
 
   return tokenData;

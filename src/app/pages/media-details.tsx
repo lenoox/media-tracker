@@ -1,10 +1,10 @@
 import React from "react";
-import { getMovie } from "../services/media.service";
-import { LoaderFunctionArgs, useLoaderData } from "react-router-dom";
-import { Media, MediaRequest } from "../models/media";
-import { formatDateToYear } from "../utils/utils";
-import { useTranslation } from "react-i18next";
-import { MovieDescription } from "../components/movie-description/movie-description";
+import {getMovie} from "../services/media.service";
+import {LoaderFunctionArgs, useLoaderData} from "react-router-dom";
+import {Media, MediaRequest} from "../models/media";
+import {formatDateToYear} from "../utils/utils";
+import {useTranslation} from "react-i18next";
+import {MovieDescription} from "../components/movie-description/movie-description";
 
 export async function mediaLoader({
   params: { id },

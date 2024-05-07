@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useSearchMedia } from "../../context/search-media-provider";
-import { useTranslation } from "react-i18next";
-import { goToPage } from "../../services/navigate.service";
+import React, {useState} from "react";
+import {useSearchMedia} from "../../context/search-media-provider";
+import {useTranslation} from "react-i18next";
+import {goToPage} from "../../services/navigate.service";
 
 export const SearchMedia = () => {
   const { t } = useTranslation();

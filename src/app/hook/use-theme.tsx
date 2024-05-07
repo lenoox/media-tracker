@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 
 export default function useDarkTheme(): [string, (theme: string) => void] {
   const [theme, setTheme] = useState<string>(localStorage.theme);

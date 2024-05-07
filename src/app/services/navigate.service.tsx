@@ -1,5 +1,5 @@
-import { router } from "../routing/route";
+import {router} from "../routing/route";
 
-export const goToPage = (page: string): any => {
+export const goToPage = (page: string): void => {
   router.navigate(page);
 };

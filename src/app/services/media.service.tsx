@@ -1,11 +1,6 @@
-import { AxiosResponse } from "axios";
-import {
-  Categories,
-  CategoriesResponse,
-  Media,
-  MediaList,
-} from "../models/media";
-import { api } from "./api.service";
+import {AxiosResponse} from "axios";
+import {Categories, CategoriesResponse, Media, MediaList,} from "../models/media";
+import {api} from "./api.service";
 
 export const searchMovies = async (
   title: string | null
