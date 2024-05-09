@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import {useSearchMedia} from "../../context/search-media-provider";
+
 import {useTranslation} from "react-i18next";
 import {goToPage} from "../../services/navigate.service";
+import {useSearchMedia} from "../../context/search-media-provider";
 
 export const SearchMedia = () => {
   const { t } = useTranslation();
@@ -14,14 +15,15 @@ export const SearchMedia = () => {
   };
   return (
     <div className="relative h-full">
-      <input
-        className="w-full  border-0 bg-stone-50 px-5 py-2 text-stone-900 placeholder-stone-600 dark:bg-stone-700 dark:text-white dark:placeholder-stone-300"
+      <input data-cy="search-input"
+        className="w-full border-0 bg-stone-50 px-5 py-2 text-stone-900 placeholder-stone-600 dark:bg-stone-700 dark:text-white dark:placeholder-stone-300"
         value={searchMediaCurrent}
         onChange={(e) => setSearchMediaCurrent(e.target.value)}
         placeholder={t("searchPlaceHolder")}
       />
       <button className="absolute inset-y-0 right-0 flex items-center pr-2">
         <svg
+          data-cy="search-btn"
           onClick={() => handleClick()}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

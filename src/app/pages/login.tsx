@@ -29,6 +29,7 @@ export const Login = () => {
                 </label>
                 <div className="mt-1">
                   <input
+                      data-cy="login"
                       id="username"
                       name="username"
                       type="text"
@@ -46,6 +47,7 @@ export const Login = () => {
                 </label>
                 <div className="mb-4">
                   <input
+                      data-cy="password"
                       id="password"
                       name="password"
                       type="password"
@@ -59,6 +61,7 @@ export const Login = () => {
               </div>
               <div>
                 <button
+                    data-cy="login-submit"
                     type="submit"
                     className="w-full flex justify-center py-2 px-4 text-sm font-medium text-white bg-blue-900  hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900"
                 >

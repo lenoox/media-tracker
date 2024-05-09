@@ -34,6 +34,7 @@ export const MovieCard = ({
           </div>
           <div className="flex items-end justify-end">
             <NavLink
+                data-cy="go-to-movie"
               to={`/details/${id}`}
               className="mt-2  gap-x-2 rounded-lg border border-transparent bg-blue-900 py-2 px-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:pointer-events-none disabled:opacity-50 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
