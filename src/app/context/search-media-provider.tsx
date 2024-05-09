@@ -6,7 +6,7 @@ const SearchMediaContext = createContext<[string, (media: string) => void]>([
 ]);
 
 export const SearchMediaProvider = ({ children }: any) => {
-  const [searchMedia, setSearchMedia] = useState<string>("Avengers");
+  const [searchMedia, setSearchMedia] = useState<string>("");
   return (
     <SearchMediaContext.Provider value={[searchMedia, setSearchMedia]}>
       {children}
