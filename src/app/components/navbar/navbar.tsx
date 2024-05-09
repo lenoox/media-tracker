@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Switcher } from "../theme-switcher/theme-switcher";
-import { SearchMedia } from "../search-media/search-media";
+import {NavLink} from "react-router-dom";
+import {Switcher} from "../theme-switcher/theme-switcher";
+import {SearchMedia} from "../search-media/search-media";
 import Menu from "../menu/menu";
 import LanguageSelector from "../language-selector/language";
 

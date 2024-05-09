@@ -17,14 +17,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
-
+          node-version: '21'
       - name: Install dependencies
         run: npm ci
-
       - name: Build app
         run: npm run build
-
+        env:
+          REACT_APP_API_KEY: ${{ secrets.API_KEY }}
+          REACT_APP_API_URL: ${{ secrets.API_URL }}
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@master
         with:

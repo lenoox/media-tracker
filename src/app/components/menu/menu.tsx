@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { getAllCategories } from "../../services/media.service";
-import { SearchMedia } from "../search-media/search-media";
+import React, {useEffect, useState} from "react";
+import {NavLink} from "react-router-dom";
+import {getAllCategories} from "../../services/media.service";
+import {SearchMedia} from "../search-media/search-media";
+import {Categories, CategoriesResponse} from "../../models/media";
 
 const Menu = () => {
   const [isVisible, setVisible] = useState<boolean>(false);
   const showMenu = async () => {
     setVisible(!isVisible);
   };
-  const [categories, setCategories] = useState<any>([]);
+  const [categories, setCategories] = useState<Categories[]>([]);
   const getCategories = async () => {
-    const data: any = await getAllCategories();
+    const data: CategoriesResponse<Categories> = await getAllCategories();
     return data;
   };
 
@@ -56,7 +57,7 @@ const Menu = () => {
               data-testid="categories"
             >
               {categories &&
-                categories.map((data: any) => (
+                categories.map((data: Categories) => (
                   <NavLink
                     key={data.id}
                     data-testid="category"

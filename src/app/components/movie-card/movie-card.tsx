@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import React from "react";
-import { MovieCardParams } from "../../models/media";
-import { formatDateToYear } from "../../utils/utils";
-import { useTranslation } from "react-i18next";
+import {MovieCardParams} from "../../models/media";
+import {formatDateToYear} from "../../utils/utils";
+import {useTranslation} from "react-i18next";
 
 export const MovieCard = ({
   media: { backdrop_path, id, release_date, title },

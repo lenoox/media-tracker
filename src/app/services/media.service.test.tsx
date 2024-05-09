@@ -1,14 +1,9 @@
-import {
-  getAllCategories,
-  getMovie,
-  getMovieByCategory,
-  popularMovie,
-} from "./media.service";
-import { movieByCategoryData, movieData } from "./media-data";
+import {getAllCategories, getMovie, getMovieByCategory, popularMovie,} from "./media.service";
+import {movieByCategoryData, movieData} from "./media-data";
 import * as apiService from "./api.service";
-import { apiKey, mockUrl, tokenMock } from "../utils/utils-for-test";
-import { localStorageService } from "./storage.service";
-import { Media, MediaList } from "../models/media";
+import {apiKey, mockUrl, tokenMock} from "../utils/utils-for-test";
+import {localStorageService} from "./storage.service";
+import {Media, MediaList} from "../models/media";
 
 describe("media", () => {
   beforeEach(async () => {
