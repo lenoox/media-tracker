@@ -4,6 +4,7 @@ import {MovieCard} from "../components/movie-card/movie-card";
 import {Media, MediaList} from "../models/media";
 import {useSearchMedia} from "../context/search-media-provider";
 
+
 export const Home = () => {
   const [title, setTitle] = useState<string | null>(null);
   const [movies, setMovies] = useState<Media[]>([]);
