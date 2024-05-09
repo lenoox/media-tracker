@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Switcher data-testid="darkMode" />
             <LanguageSelector data-testid="languageSelector"></LanguageSelector>
-            <div className="ml-5 hidden lg:block">
+            <div data-cy="search-container" className="ml-5 hidden lg:block">
               <SearchMedia data-testid="searchMedia" />
             </div>
           </div>
