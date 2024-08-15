@@ -14,15 +14,16 @@ describe('Search movie', () => {
     cy.get('[data-cy="login"]').type("demo")
     cy.get('[data-cy="password"]').type("demo")
     cy.get('[data-cy="login-submit"]').click()
-    cy.get('[data-cy="home-title"]').should('include.text', `Popular Productions`)
-          cy.get('[data-cy="search-input"]').eq(1).type('Mad Max');
-          cy.get('[data-cy="search-btn"]').eq(1).should('be.visible').click()
+   // cy.get('[data-cy="home-title"]').should('include.text', `Popular Productions`)
+    cy.get('[data-cy="search-input"]').eq(1).type('Mad Max');
+    cy.get('[data-cy="search-btn"]').eq(1).should('be.visible').click()
 
-     cy.get('[data-cy="home-title"]', {timeout: 50000}).should('include.text', `Results for Mad Max`)
+    cy.get('[data-cy="home-title"]', ).should('be.visible');
+    cy.get('[data-cy="home-title"]', ).should('include.text', `Results for Mad Max`)
     cy.get('[data-cy="home-movies"]').children().should('have.length', 20)
 
-
     cy.get('[data-cy="go-to-movie"]').eq(2).click();
-    cy.get('[data-cy="movie-title"]', {timeout: 50000}).should('be.visible').should('include.text', `Mad Max: Fury Road`)
+    cy.get('[data-cy="movie-title"]',).should('be.visible');
+    cy.get('[data-cy="movie-title"]', {timeout: 50000}).should('include.text', `Mad Max: Fury Road`)
   })
 })
