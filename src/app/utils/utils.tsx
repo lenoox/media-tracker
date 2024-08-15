@@ -1,11 +1,12 @@
 import {DateTime} from "luxon";
+import {filter} from "lodash";
 
 export const filteredParamsIfNotNull = (params: unknown) => {
   if (!params) {
     return;
   }
   return Object.fromEntries(
-    Object.entries(params).filter((value) => !!value)
+    filter(Object.entries(params),(value) => !!value)
   );
 };
 export const formatDateToYear = (dataString: string): number => {

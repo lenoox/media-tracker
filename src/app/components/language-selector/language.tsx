@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {Directory} from "../../models/directory";
 import {useTranslation} from "react-i18next";
+import { map } from "lodash";
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
@@ -51,7 +52,7 @@ const LanguageSelector = () => {
       {dropdownOpen && (
         <div className="absolute right-0 mt-3 w-20 rounded-md bg-white">
           <div className="py-1">
-            {availableLanguages.map((language) => (
+            {map(availableLanguages,(language) => (
               <button
                 key={language.label}
                 className="block cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
