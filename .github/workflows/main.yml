@@ -22,8 +22,11 @@ jobs:
         run: npm ci
       - name: unit test
         run: npm run test
-      - name: e2e test
-        run: npm run start &&npm run e2e
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
       - name: Build app
         run: npm run build
         env:
