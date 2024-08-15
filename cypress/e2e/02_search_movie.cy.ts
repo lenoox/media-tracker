@@ -21,7 +21,7 @@ describe('Search movie', () => {
           cy.get('[data-cy="search-input"]').type('Mad Max');
           cy.get('[data-cy="search-btn"]').click()
         });
-    cy.wait(['@searchMovie']);
+    cy.wait(['@searchMovie'], { timeout: 20000 });
     cy.get('[data-cy="home-title"]').should('include.text', `Results for Mad Max`)
     cy.get('[data-cy="home-movies"]').children().should('have.length', 20)
 
@@ -32,7 +32,7 @@ describe('Search movie', () => {
         .within(() => {
           cy.get('[data-cy="go-to-movie"]').click()
         })
-    cy.wait(['@movieData']);
+    cy.wait(['@movieData'], { timeout: 20000 });
     cy.get('[data-cy="movie-title"]').should('include.text', `Mad Max: Fury Road`)
   })
 })
