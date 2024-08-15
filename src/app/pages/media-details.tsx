@@ -5,6 +5,7 @@ import {Media, MediaRequest} from "../models/media";
 import {formatDateToYear} from "../utils/utils";
 import {useTranslation} from "react-i18next";
 import {MovieDescription} from "../components/movie-description/movie-description";
+import {map} from "lodash";
 
 export async function mediaLoader({
   params: { id },
@@ -49,7 +50,7 @@ export const MediaDetails = () => {
             </MovieDescription>
             <MovieDescription label={t("productionCountries")}>
               <ul className="list-disc">
-                {production_countries.map((productionCountry) => (
+                {map(production_countries,(productionCountry) => (
                   <li
                     className="text-md ml-6 text-gray-800 dark:text-stone-300"
                     key={productionCountry.name}
@@ -61,7 +62,7 @@ export const MediaDetails = () => {
             </MovieDescription>
             <MovieDescription label={t("genresLabel")}>
               <ul className="list-disc">
-                {genres.map((genre) => (
+                {map(genres,(genre) => (
                   <li
                     className="text-md ml-6 text-gray-800 dark:text-stone-300"
                     key={genre.name}
@@ -73,7 +74,7 @@ export const MediaDetails = () => {
             </MovieDescription>
             <MovieDescription label={t("languagesLabel")}>
               <ul className="list-disc">
-                {spoken_languages.map((spokenLanguage) => (
+                {map(spoken_languages,(spokenLanguage) => (
                   <li
                     className="text-md ml-6 text-gray-800 dark:text-stone-300"
                     key={spokenLanguage.name}

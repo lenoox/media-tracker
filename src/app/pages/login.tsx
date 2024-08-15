@@ -22,7 +22,7 @@ export const Login = () => {
         </div>
         <div className="mt-8 px-10 md:px-0 w-full md:mx-auto max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form  onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                   {t("emailAddressText")}

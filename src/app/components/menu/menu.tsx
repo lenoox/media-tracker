@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import {getAllCategories} from "../../services/media.service";
 import {SearchMedia} from "../search-media/search-media";
 import {Categories, CategoriesResponse} from "../../models/media";
+import {map} from "lodash";
 
 const Menu = () => {
   const [isVisible, setVisible] = useState<boolean>(false);
@@ -57,7 +58,7 @@ const Menu = () => {
               data-testid="categories"
             >
               {categories &&
-                categories.map((data: Categories) => (
+                map(categories,(data: Categories) => (
                   <NavLink
                     key={data.id}
                     data-testid="category"

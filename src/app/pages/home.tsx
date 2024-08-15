@@ -3,6 +3,7 @@ import {popularMovie, searchMovies} from "../services/media.service";
 import {MovieCard} from "../components/movie-card/movie-card";
 import {Media, MediaList} from "../models/media";
 import {useSearchMedia} from "../context/search-media-provider";
+import {map} from "lodash";
 
 
 export const Home = () => {
@@ -37,7 +38,7 @@ export const Home = () => {
       </h2>
         {movies?.length > 0 ? (
             <div data-cy="home-movies" className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-              {movies.map((media) => (
+              {map(movies,(media) => (
                   <MovieCard media={media} key={media.id} />
               ))}
             </div>

@@ -3,6 +3,7 @@ import {getAllCategories, getMovieByCategory,} from "../services/media.service";
 import {MovieCard} from "../components/movie-card/movie-card";
 import {Categories, CategoriesResponse, CategoryMediaList, Media, MediaList, MediaRequest,} from "../models/media";
 import {LoaderFunctionArgs, useLoaderData} from "react-router-dom";
+import {map} from "lodash";
 
 export async function mediaByCategoriesLoader({
   params: { categoryId },
@@ -29,8 +30,8 @@ export const Category = () => {
   const [title, setTitle] = useState<string | undefined>(undefined);
   const getCategories = async (categoryId: string): Promise<void> => {
     const data: CategoriesResponse<Categories> = await getAllCategories();
-    const curentCategory = data.genres.find((data) => data.id === +categoryId);
-    setTitle(curentCategory?.name);
+    const currentCategory = data.genres.find((data) => data.id === +categoryId);
+    setTitle(currentCategory?.name);
   };
 
   useEffect(() => {
@@ -46,7 +47,7 @@ export const Category = () => {
       </h2>
       {results?.length > 0 ? (
         <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-          {results.map((media) => (
+          {map(results,(media) => (
             <MovieCard media={media} key={media.id} />
           ))}
         </div>
