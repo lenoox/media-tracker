@@ -26,7 +26,7 @@ export const Home = () => {
       setMovies(results);
       setTitle(`Results for ${searchMedia}`);
     };
-    if(!!searchMedia){
+    if(searchMedia){
       searchMovie().catch((e)=>console.log(e))
     }
 
