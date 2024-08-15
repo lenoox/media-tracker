@@ -23,7 +23,7 @@ jobs:
       - name: unit test
         run: npm run test
       - name: e2e test
-        run: npm run e2e
+        run: npm run start &&npm run e2e
       - name: Build app
         run: npm run build
         env:
