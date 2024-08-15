@@ -19,7 +19,7 @@ describe('Search movie', () => {
         .should('have.class', 'lg:block')
         .within(() => {
           cy.get('[data-cy="search-input"]').type('Mad Max');
-          cy.get('[data-cy="search-btn"]').click()
+          cy.get('[data-cy="search-btn"]').should('be.visible').click()
         });
 
     // cy.get('[data-cy="home-title"]', {timeout: 50000}).should('include.text', `Results for Mad Max`)
@@ -27,8 +27,8 @@ describe('Search movie', () => {
 
 
     cy.get('[data-cy="home-movies"]').children().eq(2).within(() => {
-      cy.get('[data-cy="go-to-movie"]').first().click();
+      cy.get('[data-cy="go-to-movie"]').should('be.visible').first().click();
     });
-    cy.get('[data-cy="movie-title"]', {timeout: 50000}).should('include.text', `Mad Max: Fury Road`)
+    cy.get('[data-cy="movie-title"]', {timeout: 50000}).should('be.visible').should('include.text', `Mad Max: Fury Road`)
   })
 })
