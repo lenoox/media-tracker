@@ -29,7 +29,7 @@ export const MediaDetails = () => {
   return (
     <div className="" key={id}>
       <div className="white flex flex-col items-start">
-        <h3 className="mb-5 text-2xl font-bold text-gray-800 dark:text-stone-100">
+        <h3 data-cy="movie-title" className="mb-5 text-2xl font-bold text-gray-800 dark:text-stone-100">
           {title}
         </h3>
         <div className="flex flex-col gap-5 md:flex-row">

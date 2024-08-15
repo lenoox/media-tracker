@@ -1,0 +1,386 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/wNAhuOZ3Zf84jCIlrcI6JhgmY5q.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 786892,
+      "original_language": "en",
+      "original_title": "Furiosa: A Mad Max Saga",
+      "overview": "As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.",
+      "popularity": 873.902,
+      "poster_path": "/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
+      "release_date": "2024-05-22",
+      "title": "Furiosa: A Mad Max Saga",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 2604
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uL5DoOuMho1QY7OK5IqacYH9QHK.jpg",
+      "genre_ids": [
+        12,
+        28,
+        53,
+        878
+      ],
+      "id": 9659,
+      "original_language": "en",
+      "original_title": "Mad Max",
+      "overview": "In the ravaged near-future, a savage motorcycle gang rules the road. Terrorizing innocent civilians while tearing up the streets, the ruthless gang laughs in the face of a police force hell-bent on stopping them.",
+      "popularity": 60.688,
+      "poster_path": "/5LrI4GiCSrChgkdskVZiwv643Kg.jpg",
+      "release_date": "1979-04-12",
+      "title": "Mad Max",
+      "video": false,
+      "vote_average": 6.688,
+      "vote_count": 4300
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gqrnQA6Xppdl8vIb2eJc58VC1tW.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 76341,
+      "original_language": "en",
+      "original_title": "Mad Max: Fury Road",
+      "overview": "An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order.",
+      "popularity": 166.589,
+      "poster_path": "/hA2ple9q4qnwxp3hKVNhroipsir.jpg",
+      "release_date": "2015-05-13",
+      "title": "Mad Max: Fury Road",
+      "video": false,
+      "vote_average": 7.609,
+      "vote_count": 22233
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jEuwsmFS8JPzkDIhRL3B2BVYbU4.jpg",
+      "genre_ids": [
+        12,
+        28,
+        53,
+        878
+      ],
+      "id": 8810,
+      "original_language": "en",
+      "original_title": "Mad Max 2",
+      "overview": "Max Rockatansky returns as the heroic loner who drives the dusty roads of a postapocalyptic Australian Outback in an unending search for gasoline. Arrayed against him and the other scraggly defendants of a fuel-depot encampment are the bizarre warriors commanded by the charismatic Lord Humungus, a violent leader whose scruples are as barren as the surrounding landscape.",
+      "popularity": 59.206,
+      "poster_path": "/dhVekfpaCW3QavAwGYbaQig87Xc.jpg",
+      "release_date": "1981-12-24",
+      "title": "Mad Max 2",
+      "video": false,
+      "vote_average": 7.393,
+      "vote_count": 3619
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mSy1Ytpvuy05aTNJJ0pPRtdMG85.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 9355,
+      "original_language": "en",
+      "original_title": "Mad Max Beyond Thunderdome",
+      "overview": "Mad Max becomes a pawn in a decadent oasis of a technological society, and when exiled, becomes the deliverer of a colony of children.",
+      "popularity": 47.266,
+      "poster_path": "/jJlxcEVVUHnrUeEkQ0077VeHQpb.jpg",
+      "release_date": "1985-06-29",
+      "title": "Mad Max Beyond Thunderdome",
+      "video": false,
+      "vote_average": 6.214,
+      "vote_count": 2823
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 340023,
+      "original_language": "en",
+      "original_title": "Mad Max: The Wasteland",
+      "overview": "Follow Max Rockatansky in the year before the events of \"Mad Max: Fury Road.\"",
+      "popularity": 14.161,
+      "poster_path": "/zviMeR3CqbX3x3loO8xoSHCkiSs.jpg",
+      "release_date": "",
+      "title": "Mad Max: The Wasteland",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1150126,
+      "original_language": "en",
+      "original_title": "Mad Max Exposed",
+      "overview": "Step into the world of the original Mad Max movie and take a rare behind the scenes look at the making of this groundbreaking film.",
+      "popularity": 2.925,
+      "poster_path": "/peRJajgLPgGWAGnAjMgoZzFod9.jpg",
+      "release_date": "2022-06-01",
+      "title": "Mad Max Exposed",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 692281,
+      "original_language": "pt",
+      "original_title": "Mad.Max",
+      "overview": "",
+      "popularity": 1.119,
+      "poster_path": "/4fbUAemJ75HuJ1MCSUnadG6212H.jpg",
+      "release_date": "",
+      "title": "Mad.Max",
+      "video": true,
+      "vote_average": 7.75,
+      "vote_count": 6
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8RzVpnkZKNDqzYRiF6WOV7ha6y9.jpg",
+      "genre_ids": [
+        12,
+        28
+      ],
+      "id": 1280427,
+      "original_language": "en",
+      "original_title": "Hope and Glory: A Mad Max Fan Film",
+      "overview": "Haunted by his past, Max Rockatansky crosses the Wasteland on his own. In search of fuel to keep his car moving, he meets Hope. In exchange for her freedom, she promises him gasoline. But before Max's Interceptor's tank can be refilled, a dangerous mission must be completed. With no choice, he accepts the deal and travels deep into Buzzard territory. Beneath the sunken city, he not only has to fight a barbaric tribe, but also his inner demons...",
+      "popularity": 3.999,
+      "poster_path": "/sT48v7N6MQemKnaXyeAPJzBI3hL.jpg",
+      "release_date": "2024-05-05",
+      "title": "Hope and Glory: A Mad Max Fan Film",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        12,
+        878,
+        53
+      ],
+      "id": 307732,
+      "original_language": "en",
+      "original_title": "Mad Max: Renegade",
+      "overview": "Mad Max Renegade follows the further adventures of Max Rockatansky after his desertion from Main Force Patrol in his famed Pursuit Special, more commonly known as the Interceptor.",
+      "popularity": 3.316,
+      "poster_path": "/tKSLSe5ZhcCHMNWyfsmH8D3WykZ.jpg",
+      "release_date": "2011-12-03",
+      "title": "Mad Max: Renegade",
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 20
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dSnrVpDOoYxxBjyb44eE8XX5eEJ.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 554247,
+      "original_language": "en",
+      "original_title": "Mad Maxine: Frisky Road",
+      "overview": "In a post-apocalyptic wasteland, the Bone Warrior Mad Maxine travels the desert highways for fashion accessories to soothe her broken heart.  Many will try to stop her, and many will fail. But the sexual roadblocks of a g-stringed biker gang and evil dictator Immortan Hoe may ultimately prove more tempting than a 30 percent discount on Christian Louboutin pumps.",
+      "popularity": 3.198,
+      "poster_path": "/sSnQmoIqUuPcso3tcE53nPwDJ4.jpg",
+      "release_date": "2018-10-08",
+      "title": "Mad Maxine: Frisky Road",
+      "video": false,
+      "vote_average": 3.0,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        35,
+        878
+      ],
+      "id": 1299366,
+      "original_language": "en",
+      "original_title": "Mad Max: Roadkill BBQ",
+      "overview": "Stuck in a unforgiving wasteland, two survivors in desperate need of gas try to collect meat to trade with their supply being the Savage raiders that plagues the land and their only weapon is their car.",
+      "popularity": 1.366,
+      "poster_path": "/7q0Seks1ZIJeU6rjE5aNeuN4hwA.jpg",
+      "release_date": "2015-08-11",
+      "title": "Mad Max: Roadkill BBQ",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 650738,
+      "original_language": "en",
+      "original_title": "Mad to The Max: Hoon Nation",
+      "overview": "A look at Aussies Hoodlum culture.",
+      "popularity": 0.4,
+      "poster_path": "/pxcpLk7sYk7a1G3w2S1IOAAVzP6.jpg",
+      "release_date": "2017-11-01",
+      "title": "Mad to The Max: Hoon Nation",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 1295430,
+      "original_language": "en",
+      "original_title": "The Making of 'Mad Max Beyond Thunderdome'",
+      "overview": "Follows the cast and crew of Mad Max Beyond Thunderdome filming in the heat and dust of central Australia.",
+      "popularity": 3.324,
+      "poster_path": "/cPkntegRjLBgXfTkPxLeEobya5T.jpg",
+      "release_date": "1985-06-25",
+      "title": "The Making of 'Mad Max Beyond Thunderdome'",
+      "video": false,
+      "vote_average": 6.333,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 340266,
+      "original_language": "fr",
+      "original_title": "Mad Max: A Wasteland Story",
+      "overview": "",
+      "popularity": 1.373,
+      "poster_path": null,
+      "release_date": "2012-10-23",
+      "title": "Mad Max: A Wasteland Story",
+      "video": false,
+      "vote_average": 6.625,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 1298200,
+      "original_language": "en",
+      "original_title": "Mad Maxine",
+      "overview": "The total rip off version of mad max fury road where a female main character is implemented just for the sake of being a female.",
+      "popularity": 0.424,
+      "poster_path": null,
+      "release_date": "2023-05-14",
+      "title": "Mad Maxine",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 1217234,
+      "original_language": "en",
+      "original_title": "Mad Scientists: A.I. Maxima",
+      "overview": "A consortium of global scientists and journalists receives an exclusive invitation to participate in the inaugural groundbreaking symposium held within an overlooked foreign nation. Contrary to expectations of engaging in a discourse on synthetic intelligence, their DNA is surreptitiously cloned by an exceedingly sophisticated humanoid A.I. apparatus developed by the country's prodigious mastermind. To elude captivity, the collective resorts to manipulating and reprogramming the extant robotic entities from the laboratory. However, the ultimate outcome remains shrouded in enigma, as the A.I. creation known as Maxima transcends the bounds of human imagination, far surpassing any prior conception of technological advancement. Inspired by a true story that happened in 2019.",
+      "popularity": 0.68,
+      "poster_path": "/fAoMIubF2mNnfBLqTfyHP7fXadv.jpg",
+      "release_date": "2023-11-26",
+      "title": "Mad Scientists: A.I. Maxima",
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28
+      ],
+      "id": 1225313,
+      "original_language": "en",
+      "original_title": "Mad Max Payne",
+      "overview": "What if Mad Max Rockatansky and Max Payne were actually the same person? They were both cops, they had their families killed and they live in a world where norse mythology is key!",
+      "popularity": 0.668,
+      "poster_path": "/gD3r10bFNZXhvwlTDZZKHruDo9x.jpg",
+      "release_date": "2015-09-01",
+      "title": "Mad Max Payne",
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1330189,
+      "original_language": "en",
+      "original_title": "Furiosa: A Mad Max Saga: Black \u0026 Chrome",
+      "overview": "New version of \"Furiosa: A Mad Max Saga\".\r As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus.",
+      "popularity": 0.0,
+      "poster_path": null,
+      "release_date": "",
+      "title": "Furiosa: A Mad Max Saga: Black \u0026 Chrome",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6PCprqrm0kdzYdAtZlSiFoY0Ypi.jpg",
+      "genre_ids": [
+        28,
+        16
+      ],
+      "id": 95414,
+      "original_language": "en",
+      "original_title": "Superman",
+      "overview": "After The Daily Planet receives a letter from a mad scientist threatening to wreak destruction with his Electrothanasia Ray, Lois Lane heads out in the hopes of getting more information for a news story.",
+      "popularity": 11.581,
+      "poster_path": "/4DK6wWZTp6v32NUXszkHOPGxm16.jpg",
+      "release_date": "1941-09-26",
+      "title": "Superman",
+      "video": false,
+      "vote_average": 6.812,
+      "vote_count": 93
+    }
+  ],
+  "total_pages": 2,
+  "total_results": 23
+}
