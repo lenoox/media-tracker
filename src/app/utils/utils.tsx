@@ -9,8 +9,8 @@ export const filteredParamsIfNotNull = (params: unknown) => {
     filter(Object.entries(params),(value) => !!value)
   );
 };
-export const formatDateToYear = (dataString: string): number => {
-  return DateTime.fromISO(dataString).year;
+export const formatDateToYear = (dataString: string): string => {
+  return dataString ? DateTime.fromISO(dataString).year.toString(): "";
 };
 export const currentYear = (): number => {
   const currentDate = DateTime.local();
