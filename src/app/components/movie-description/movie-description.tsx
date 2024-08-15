@@ -5,7 +5,7 @@ export const MovieDescription = ({
   children,
 }: {
   label: string;
-  children: JSX.Element|number;
+  children: JSX.Element|string;
 }) => {
   return (
     <div className="text-sm">
