@@ -12,18 +12,21 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '21'
       - name: Install dependencies
         run: npm ci
       - name: unit test
         run: npm run test
-      - name: e2e test
-        run: npm run e2e
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
       - name: Build app
         run: npm run build
         env:

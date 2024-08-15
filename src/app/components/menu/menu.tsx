@@ -17,7 +17,7 @@ const Menu = () => {
   };
 
   useEffect(() => {
-    getCategories().then((data) => setCategories(data.genres));
+    getCategories().then((data) => setCategories(data?.genres));
   }, []);
   const handleOutsideClick = (event: MouseEvent) => {
     if (!(event.target as HTMLElement).closest("#menu")) {
