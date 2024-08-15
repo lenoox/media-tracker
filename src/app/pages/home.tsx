@@ -23,10 +23,10 @@ export const Home = () => {
   useEffect(() => {
     const searchMovie = async () => {
       const { results }: MediaList<Media> = await searchMovies(searchMedia);
-      setTitle(`Results for ${searchMedia}`);
       setMovies(results);
+      setTitle(`Results for ${searchMedia}`);
     };
-    if(searchMedia.length>0){
+    if(!!searchMedia){
       searchMovie().catch((e)=>console.log(e))
     }
 
