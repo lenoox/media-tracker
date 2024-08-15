@@ -3,7 +3,7 @@ import {getAllCategories, getMovieByCategory,} from "../services/media.service";
 import {MovieCard} from "../components/movie-card/movie-card";
 import {Categories, CategoriesResponse, CategoryMediaList, Media, MediaList, MediaRequest,} from "../models/media";
 import {LoaderFunctionArgs, useLoaderData} from "react-router-dom";
-import {map} from "lodash";
+import {find, map} from "lodash";
 
 export async function mediaByCategoriesLoader({
   params: { categoryId },
@@ -30,7 +30,7 @@ export const Category = () => {
   const [title, setTitle] = useState<string | undefined>(undefined);
   const getCategories = async (categoryId: string): Promise<void> => {
     const data: CategoriesResponse<Categories> = await getAllCategories();
-    const currentCategory = data.genres.find((data) => data.id === +categoryId);
+    const currentCategory = find(data.genres,(data) => data.id === +categoryId);
     setTitle(currentCategory?.name);
   };
 
