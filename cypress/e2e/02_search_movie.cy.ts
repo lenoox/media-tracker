@@ -5,6 +5,7 @@ describe('Search movie', () => {
 
   it('Search for a movie and navigate to the first result', () => {
     cy.intercept('GET', '**/movie/popular*', { fixture: 'popularData.json' })
+    cy.intercept('GET', '**/genre/movie/list*', { fixture: 'genresData.json' })
     cy.intercept('GET', '**/search/movie**&query=Mad+Max', { fixture: 'searchMovie.json' })
     cy.intercept('GET', '**/movie/76341*', { fixture: 'movieData.json' })
     cy.clearLocalStorage('token')
@@ -30,4 +31,4 @@ describe('Search movie', () => {
         })
     cy.get('[data-cy="movie-title"]').should('include.text', `Mad Max: Fury Road`)
   })
-}) 
+})
