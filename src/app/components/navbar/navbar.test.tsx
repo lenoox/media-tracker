@@ -25,6 +25,7 @@ describe("navbar", () => {
     jest
         .spyOn(router, "useNavigate")
         .mockImplementation(() => mockedNavigation);
+    initUseTranslationForTest(); 
   });
 
   afterEach(() => {
@@ -38,7 +39,6 @@ describe("navbar", () => {
 
 
   it("should contain text logo", async () => {
-    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -47,7 +47,6 @@ describe("navbar", () => {
   });
 
   it("should contain language selector", async () => {
-     initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -55,7 +54,6 @@ describe("navbar", () => {
   });
 
   it("should contain dark mode switcher", async () => {
-    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -63,7 +61,6 @@ describe("navbar", () => {
   });
 
   it("should contain search media component", async () => {
-    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -71,7 +68,6 @@ describe("navbar", () => {
   });
 
   it("should navigate to the home page", async() => {
-    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
