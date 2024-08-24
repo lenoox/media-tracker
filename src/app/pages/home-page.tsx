@@ -6,7 +6,7 @@ import {useSearchMedia} from "../context/search-media-provider";
 import {map} from "lodash";
 
 
-export const Home = () => {
+export const HomePage = () => {
   const [title, setTitle] = useState<string | null>(null);
   const [movies, setMovies] = useState<Media[]>([]);
   const [searchMedia] = useSearchMedia();

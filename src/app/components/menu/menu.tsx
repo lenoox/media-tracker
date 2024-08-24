@@ -6,9 +6,9 @@ import {Categories, CategoriesResponse} from "../../models/media";
 import {map} from "lodash";
 
 const Menu = () => {
-  const [isVisible, setVisible] = useState<boolean>(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
   const showMenu = async () => {
-    setVisible(!isVisible);
+    setIsVisible(!isVisible);
   };
   const [categories, setCategories] = useState<Categories[]>([]);
   const getCategories = async () => {
@@ -21,7 +21,7 @@ const Menu = () => {
   }, []);
   const handleOutsideClick = (event: MouseEvent) => {
     if (!(event.target as HTMLElement).closest("#menu")) {
-      setVisible(false);
+      setIsVisible(false);
     }
   };
   useEffect(() => {

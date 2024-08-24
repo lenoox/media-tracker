@@ -2,18 +2,18 @@ import React, {FormEvent, useState} from "react";
 import {getToken} from "../services/user.service";
 import {useTranslation} from "react-i18next";
 
-export const Login = () => {
+export const LoginPage = () => {
   const { t } = useTranslation();
-  const [username, setUserName] = useState<string>('');
+  const [userName, setUserName] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!username || !password) {
+    if (!userName || !password) {
       return;
     }
 
-    await getToken(username, password);
+    await getToken(userName, password);
   };
   return (
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center">
@@ -35,7 +35,7 @@ export const Login = () => {
                       type="text"
                       autoComplete="username"
                       required
-                      value={username}
+                      value={userName}
                       onChange={(e) => setUserName(e.target.value)}
                       className="block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-blue-900 focus:border-blue-900 sm:text-sm"
                   />

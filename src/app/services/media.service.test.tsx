@@ -3,7 +3,6 @@ import {movieByCategoryData, movieData} from "./media-data";
 import * as apiService from "./api.service";
 import {apiKey, mockUrl, tokenMock} from "../utils/utils-for-test";
 import {localStorageService} from "./storage.service";
-import {Media, MediaList} from "../models/media";
 
 describe("media", () => {
   beforeEach(async () => {
@@ -82,7 +81,7 @@ describe("media", () => {
       data: movieByCategoryData,
     });
 
-    const shows: MediaList<Media> = await getMovieByCategory("99");
+    await getMovieByCategory("99");
 
     const params = {
       api_key: apiKey,

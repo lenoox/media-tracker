@@ -21,7 +21,7 @@ export async function mediaByCategoriesLoader({
   );
 }
 
-export const Category = () => {
+export const CategoryPage = () => {
   const {
     categoryId,
     data: { results },

@@ -25,7 +25,7 @@ describe("sidebar", () => {
       mock.onGet(`${api.getApiUrl()}/genre/movie/list`).reply(200, categoriesData);
     });
 
-    const { translation } = initUseTranslationForTest();
+    initUseTranslationForTest();
 
     await act(async () => {
       renderComponent(<Menu />);

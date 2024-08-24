@@ -16,12 +16,7 @@ export const getToken = async (
           };
           return resolve(data);
         }
-        const error: Response<unknown> = {
-          error: {
-            message: "Invalid credentials",
-          },
-        };
-        return reject(error);
+        return reject(new Error("Invalid credentials"));
       }, 300);
     }
   );

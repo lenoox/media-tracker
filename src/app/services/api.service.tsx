@@ -15,10 +15,10 @@ const getApiToken = () => {
   return "123456";
 };
 
-const get = async <T,>(pathRequest: string, paramsRequest?: unknown) => {
+const get = async <T,>(pathRequest: string, paramsRequest: Record<string, unknown> = {}) => {
   const params = {
     api_key: api.getApiKey(),
-    ...(paramsRequest ? paramsRequest : null),
+    ...paramsRequest,
   };
   const paramsFilter = filteredParamsIfNotNull(params);
   const response: AxiosResponse<T> = await api
@@ -39,8 +39,8 @@ const axiosInterceptor = () => {
       }
       return config;
     },
-    (error) => {
-      return Promise.reject(error);
+    () => {
+      return Promise.reject(new Error('Something went wrong'));
     }
   );
   return axiosApi;

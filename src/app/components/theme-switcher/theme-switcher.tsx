@@ -12,7 +12,6 @@ export const Switcher = () => {
   };
 
   return (
-    <>
       <div className="flex items-center">
         <DarkModeSwitch
           checked={darkSide}
@@ -20,6 +19,5 @@ export const Switcher = () => {
           size={20}
         />
       </div>
-    </>
   );
 };

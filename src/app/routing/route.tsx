@@ -11,31 +11,31 @@ export const router = createBrowserRouter([
       {
         index: true,
         async lazy() {
-          const { Home } = await import("../pages/home");
-          return { Component: Home };
+          const { HomePage } = await import("../pages/home-page");
+          return { Component: HomePage };
         },
       },
       {
         path: ":categoryId",
         async lazy() {
-          const { mediaByCategoriesLoader, Category } = await import(
-            "../pages/category"
+          const { mediaByCategoriesLoader, CategoryPage } = await import(
+            "../pages/category-page"
           );
           return {
             loader: mediaByCategoriesLoader,
-            Component: Category,
+            Component: CategoryPage,
           };
         },
       },
       {
         path: "details/:id",
         async lazy() {
-          const { mediaLoader, MediaDetails } = await import(
-            "../pages/media-details"
+          const { mediaLoader, MediaDetailsPage } = await import(
+            "../pages/media-details-page"
           );
           return {
             loader: mediaLoader,
-            Component: MediaDetails,
+            Component: MediaDetailsPage,
           };
         },
       },
@@ -44,18 +44,18 @@ export const router = createBrowserRouter([
   {
     path: "login",
     async lazy() {
-      const { Login } = await import("../pages/login");
+      const { LoginPage } = await import("../pages/login-page");
       return {
-        Component: Login,
+        Component: LoginPage,
       };
     },
   },
   {
     path: "*",
     async lazy() {
-      const { Error } = await import("../pages/error");
+      const { ErrorPage } = await import("../pages/error-page");
       return {
-        Component: Error,
+        Component: ErrorPage,
       };
     },
   },

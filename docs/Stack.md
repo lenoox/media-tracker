@@ -3,3 +3,5 @@
 * Tailwind CSS, 
 * TypeScript, 
 * React Testing Library/Jest
+* Cypress
+* SonarQube and SonarLint

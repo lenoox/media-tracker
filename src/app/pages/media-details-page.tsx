@@ -13,7 +13,7 @@ export async function mediaLoader({
   return await getMovie(id);
 }
 
-export const MediaDetails = () => {
+export const MediaDetailsPage = () => {
   const { t } = useTranslation();
   const {
     backdrop_path,

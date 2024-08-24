@@ -38,7 +38,7 @@ describe("navbar", () => {
 
 
   it("should contain text logo", async () => {
-    const { translation } = initUseTranslationForTest();
+    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -47,7 +47,7 @@ describe("navbar", () => {
   });
 
   it("should contain language selector", async () => {
-    const { translation } = initUseTranslationForTest();
+     initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -55,7 +55,7 @@ describe("navbar", () => {
   });
 
   it("should contain dark mode switcher", async () => {
-    const { translation } = initUseTranslationForTest();
+    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -63,7 +63,7 @@ describe("navbar", () => {
   });
 
   it("should contain search media component", async () => {
-    const { translation } = initUseTranslationForTest();
+    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
@@ -71,7 +71,7 @@ describe("navbar", () => {
   });
 
   it("should navigate to the home page", async() => {
-    const { translation } = initUseTranslationForTest();
+    initUseTranslationForTest();
     await act(async () => {
       renderComponent(<Navbar />);
     });
